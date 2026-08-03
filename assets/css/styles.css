@@ -794,7 +794,7 @@ body.has-promo .hero {
   white-space: nowrap;
 }
 
-/* GAPS lockup (gaps.html header only): big Fraunces "GAPS" over a
+/* GAPS lockup (this site's header): big Fraunces "GAPS" over a
    small gold letter-spaced sub-line, matching the brochure cover.
    The main line inherits the header's ink↔light contrast flip; the
    gold sub-line reads on both grounds. */
@@ -2140,7 +2140,7 @@ body.has-promo .hero {
 }
 
 /* --------------------------------------------------------------------------
-   9j. GAPS page components (gaps.html)
+   9j. GAPS page components (index.html on gapsindia.com)
    -------------------------------------------------------------------------- */
 
 /* --- Page hero: quieter than the home hero — type only, no media --- */
@@ -2396,7 +2396,7 @@ body.has-promo .hero {
 }
 
 /* --------------------------------------------------------------------------
-   9j2. GAPS brochure-page components (gaps.html)
+   9j2. GAPS brochure-page components (index.html on gapsindia.com)
    All sections on this page run .section--dark, so token remaps supply
    white headings / slate body / gold-primary automatically; rules below
    use var(--color-gold) explicitly where gold is structural.
@@ -5090,7 +5090,7 @@ html.js-ready:not(.no-motion) .hero__portrait-mask {
     margin-inline: auto;
   }
 
-  /* --- Six-gaps grid (gaps.html "Why This Exists"): 2 × 3 instead of a
+  /* --- Six-gaps grid ("Why This Exists" section): 2 × 3 instead of a
      six-deep stack. Tightened padding/type so two fit at 375px. --- */
   .pillar-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -5184,7 +5184,7 @@ html.js-ready:not(.no-motion) .hero__portrait-mask {
    .m-cta bands exist only on phones — desktop already carries its own
    CTA rhythm (hero, section-cta blocks, pricing, final apply band).
    .section-cta--desktop marks the two desktop blocks (panel + value on
-   gaps.html) that the adjacent .m-cta band REPLACES on mobile, so
+   this page) that the adjacent .m-cta band REPLACES on mobile, so
    phones never see two Apply buttons back-to-back.
    -------------------------------------------------------------------------- */
 .m-cta {
