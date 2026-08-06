@@ -118,7 +118,12 @@
     <button class="mobile-menu__close" type="button" aria-label="Close menu">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
-    <a href="https://rajivkchawla.com/" class="mobile-menu__link">Home</a>
+    <!-- Site navigation first (cross-site, same tab), then a gold
+         hairline, then this page's section index -->
+    <a href="https://rajivkchawla.com/" class="mobile-menu__link mobile-menu__link--site">Home</a>
+    <a href="https://rajivkchawla.com/events.html" class="mobile-menu__link mobile-menu__link--site">Upcoming Events</a>
+    <a href="https://rajivkchawla.com/team.html" class="mobile-menu__link mobile-menu__link--site">Team</a>
+    <hr class="mobile-menu__divider" aria-hidden="true" />
     <a href="#why-gaps" class="mobile-menu__link">Why GAPS exists</a>
     <a href="#pillars" class="mobile-menu__link">The three pillars</a>
     <a href="#germany" class="mobile-menu__link">Germany training</a>
@@ -172,6 +177,40 @@
           </figure>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ======================= PRESS / AS SEEN IN =======================
+         Same seamless marquee as the home page press strip: two identical
+         logo sets, track translates -50%, duplicate set aria-hidden.
+         Display-only, not links. Dark GAPS restyle is scoped under
+         .page-gaps .press in styles.css (logos are white-background
+         files, so they run inverted-greyscale at rest on black). -->
+    <section class="press" aria-label="Media coverage">
+      <div class="container">
+        <p class="press__label">As Seen In</p>
+      </div>
+
+      <div class="press__viewport">
+        <div class="press__track">
+          <ul class="press__set" role="list">
+            <li><span class="press__slot"><img width="365" height="273" src="media/news18.png" alt="News18" loading="lazy" /></span></li>
+            <li><span class="press__slot"><img width="701" height="438" src="media/fortune-india.png" alt="Fortune India" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--xwide"><img width="926" height="107" src="media/financial-express.png" alt="The Financial Express" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--wide"><img width="728" height="137" src="media/ndtv.png" alt="NDTV" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--md"><img width="464" height="215" src="media/zee-news.png" alt="Zee News" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--md"><img width="504" height="198" src="media/dainik-bhaskar.png" alt="Dainik Bhaskar" loading="lazy" /></span></li>
+          </ul>
+          <!-- Duplicate set for the seamless loop — hidden from AT -->
+          <ul class="press__set" role="list" aria-hidden="true">
+            <li><span class="press__slot"><img width="365" height="273" src="media/news18.png" alt="" loading="lazy" /></span></li>
+            <li><span class="press__slot"><img width="701" height="438" src="media/fortune-india.png" alt="" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--xwide"><img width="926" height="107" src="media/financial-express.png" alt="" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--wide"><img width="728" height="137" src="media/ndtv.png" alt="" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--md"><img width="464" height="215" src="media/zee-news.png" alt="" loading="lazy" /></span></li>
+            <li><span class="press__slot press__slot--md"><img width="504" height="198" src="media/dainik-bhaskar.png" alt="" loading="lazy" /></span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -577,7 +616,7 @@
             </li>
             <li class="reveal">
               <span class="coach__fact-label">Boards</span>
-              <p>Board of NSIC (6 years). China Trust Commercial Bank (4 years). SIDBI subsidiary companies (4 years).</p>
+              <p>Board of NSIC (6 years). China Trust Commercial Bank (4 years).</p>
             </li>
             <li class="reveal">
               <span class="coach__fact-label">Councils</span>
@@ -651,11 +690,11 @@
                Photo pending: drop assets/team-images/lekhraj-sharma.jpg -->
           <article class="card panel-card panel-card--full reveal">
             <figure class="panel-card__photo">
-              <img width="600" height="600" src="assets/team-images/lekhraj-sharma.jpg" alt="Lekhraj Sharma — Chief Nodal Officer, GAPS" loading="lazy" />
+              <img width="600" height="600" src="assets/team-images/lekhraj-sharma.jpg" alt="Lekhraj Sharma — Executive Secretary, GAPS" loading="lazy" />
             </figure>
             <div>
               <h3 class="panel-card__name">Lekhraj Sharma</h3>
-              <span class="panel-card__years">Chief Nodal Officer</span>
+              <span class="panel-card__years">Executive Secretary</span>
               <p class="panel-card__focus">30 years inside administrative systems. Coordinates meetings and looks after your overall member experience.</p>
             </div>
           </article>
@@ -1117,10 +1156,10 @@
 
         <div class="card contact-card reveal">
           <figure class="contact-card__photo">
-            <img width="600" height="600" src="assets/team-images/lekhraj-sharma.jpg" alt="Lekhraj Sharma — Chief Nodal Officer, GAPS" loading="lazy" />
+            <img width="600" height="600" src="assets/team-images/lekhraj-sharma.jpg" alt="Lekhraj Sharma — Executive Secretary, GAPS" loading="lazy" />
           </figure>
           <div class="contact-card__body">
-            <span class="contact-card__label">Chief Nodal Officer, GAPS</span>
+            <span class="contact-card__label">Executive Secretary, GAPS</span>
             <p class="contact-card__name">Lekhraj Sharma</p>
             <div class="contact-card__links">
               <a href="tel:+919711123111" class="contact-chip">
@@ -1131,9 +1170,9 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5z"/><path d="M9.2 8.7c.3-.7.8-.7 1.1-.1l.6 1.1c.2.4 0 .8-.3 1.1-.3.3-.3.6 0 1.1.4.7 1 1.3 1.7 1.7.4.2.8.2 1-.1.3-.4.7-.5 1.1-.3l1.1.6c.6.3.6.8-.1 1.1-3.4 1.7-7.9-2.8-6.2-6.2z" fill="currentColor" stroke="none"/></svg>
                 <span>WhatsApp</span>
               </a>
-              <a href="mailto:info@iamsmeofindia.com" class="contact-chip">
+              <a href="mailto:es@gapsindia.com" class="contact-chip">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg>
-                <span>info@iamsmeofindia.com</span>
+                <span>es@gapsindia.com</span>
               </a>
             </div>
           </div>
@@ -1181,7 +1220,12 @@
             </a>
           </li>
           <li>
-            <a href="mailto:info@iamsmeofindia.com" aria-label="Email">
+            <a href="https://www.facebook.com/rajivchawlaindia" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21.9v-7.9h2.66l.4-3.09H13.4V8.94c0-.9.25-1.5 1.54-1.5h1.63V4.67c-.28-.04-1.25-.12-2.38-.12-2.36 0-3.97 1.44-3.97 4.08v2.28H7.55v3.09h2.67v7.9h3.18z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:es@gapsindia.com" aria-label="Email">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 4H2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-1.4 2L12 12.53 3.4 6h17.2zM3 18V7.87l8.4 6.38a1 1 0 0 0 1.2 0L21 7.87V18H3z"/></svg>
             </a>
           </li>
