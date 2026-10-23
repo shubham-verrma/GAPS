@@ -4841,6 +4841,24 @@ html.js-ready:not(.no-motion) .maths-panel:not(.diagram-in) .maths-panel__worth:
   color: #A2A6AD;
 }
 
+/* Footer nav links: tagline-sized and muted at rest, gold on hover to
+   match the social icons. Flex row so future siblings space evenly. */
+.site-footer__nav {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  font-size: 0.9375rem;
+}
+
+.site-footer__nav a {
+  color: #A2A6AD;
+  transition: color 0.3s ease;
+}
+
+.site-footer__nav a:hover {
+  color: var(--color-gold);
+}
+
 .site-footer__social {
   display: flex;
   align-items: center;
